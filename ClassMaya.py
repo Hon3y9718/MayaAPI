@@ -94,8 +94,7 @@ class MayaResponseGetter():
     #     return None
 
     def CountryResp(self, sentence):
-        Resp = ''
-        Respo = []
+        Resp = None
         # Extraction of Country
         for key in self.countryDict.keys():
             for value in self.countryDict[key]:
@@ -112,7 +111,7 @@ class MayaResponseGetter():
 
         # Extract Category
     def CategoryResp(self, sentence):
-        cat = ''
+        cat = None
         for item in self.categoryList:
             if item in sentence.lower():
                 self.countryCategory = item
