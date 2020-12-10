@@ -83,10 +83,10 @@ class MayaResponseGetter():
                 f'{self.countryCategory} news',
                 f'headlines in {self.countryCategory}',
                 f'headlines of {self.countryCategory}',
-                f'show me {self.countryCategory}'
-                f'result from {self.countryCategory} about'
-                f'{self.countryCategory} about'
-                f'{self.countryCategory}'
+                f'show me {self.countryCategory}',
+                f'result from {self.countryCategory} about',
+                f'{self.countryCategory} about',
+                f'{self.countryCategory}',
             ],
         }
     # def Response(self, sentence):
