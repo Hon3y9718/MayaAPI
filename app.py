@@ -14,10 +14,10 @@ def ReqNews():
     daTa = {}
     List = []
     country = request.args.get('country')
-    if country == None:
+    if country == None or country == '':
         country = 'in'
     category = request.args.get('category')
-    if category == None:
+    if category == None or category == '':
         category = 'general'
     urlnews = requests.get(f'http://newsapi.org/v2/top-headlines?country={country}&category={category}&apiKey=f623a55d481c4466b5e85ea7b71ab8b6').text
     jsonObj = json.loads(urlnews)
