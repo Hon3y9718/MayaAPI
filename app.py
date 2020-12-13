@@ -38,7 +38,7 @@ def ReqNews():
         'url' : article['url'],
         'urlToImage' : article['urlToImage']}
         List.append(daTa)
-    returnData = {'status': 'OK','totalResults': len(List), 'articles': List}
+    returnData = {'status': 'OK','totalResults': len(List), 'articles': List, 'country': country, 'category': category}
     return jsonify(returnData)
 
 @app.route('/api')
