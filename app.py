@@ -5,8 +5,8 @@ import requests
 from dataBase import getCountry, getCategory, setCategory, setCountry
 
 Getter = MayaResponseGetter()
-country = ''
-category = ''
+country = None
+category = None
 
 app = Flask(__name__)
 
@@ -19,7 +19,8 @@ def ReqNews():
     category = request.args.get('category')
     if country != None:
         if country != 'null':
-            setCountry(country)
+            if country != '':
+                setCountry(country)
     if category != None:
         if category != 'null':
             if category != '':
